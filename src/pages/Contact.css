@@ -1,0 +1,141 @@
+.contact-page {
+  padding: 40px 0 80px;
+  min-height: 70vh;
+}
+
+.contact-intro {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.contact-info-section h2 {
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background: var(--bg-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-method:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.contact-method.whatsapp .contact-icon {
+  background: #25D366;
+}
+
+.contact-method.instagram .contact-icon {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.contact-method.email .contact-icon {
+  background: var(--primary-color);
+}
+
+.contact-method.location .contact-icon {
+  background: var(--secondary-color);
+}
+
+.contact-details h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--text-dark);
+}
+
+.contact-details p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 5px;
+}
+
+.contact-details span {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.contact-cta-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cta-card {
+  background: var(--bg-white);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.cta-card h2 {
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.cta-card p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.btn-large {
+  padding: 15px 35px;
+  font-size: 1.1rem;
+}
+
+.custom-list {
+  list-style: none;
+}
+
+.custom-list li {
+  padding: 8px 0;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-method:hover {
+    transform: none;
+  }
+}
